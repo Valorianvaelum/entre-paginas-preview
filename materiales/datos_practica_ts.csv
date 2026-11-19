@@ -1,0 +1,11 @@
+﻿id,zona,edad,acceso,distancia_km
+1,Urbana,28,1,2
+2,Rural,46,0,18
+3,Urbana,33,1,3
+4,Rural,52,0,25
+5,Urbana,39,1,4
+6,Rural,31,0,16
+7,Urbana,44,1,5
+8,Rural,57,0,30
+9,Urbana,26,1,2
+10,Rural,48,0,21

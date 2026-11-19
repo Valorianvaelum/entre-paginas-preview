@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#F4F1EA" />
+  <meta name="description" content="Un espacio sereno e ilustrado para aprender inteligencia artificial aplicada al Trabajo Social, a tu propio ritmo." />
+  <title>Entre páginas · IA y Trabajo Social</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/content.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Ir al contenido</a>
+<div class="ambient ambient-one" aria-hidden="true"></div>
+<div class="ambient ambient-two" aria-hidden="true"></div>
+<div class="app-shell">
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Entre páginas, volver al inicio">
+      <span class="brand-mark" aria-hidden="true">✽</span>
+      <span>entre páginas<span class="brand-dot">.</span></span>
+    </a>
+    <div class="header-actions">
+      <span class="edition">CUADERNO DE ESTUDIO · 2026</span>
+      <button id="toggle-focus" class="icon-btn" type="button" aria-pressed="false" aria-label="Modo de lectura concentrada" title="Modo de lectura concentrada">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13ZM20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13Z"/></svg>
+      </button>
+      <button id="open-search" class="icon-btn" type="button" aria-label="Buscar en el libro" title="Buscar en el libro (Ctrl+K)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <button id="open-settings" class="icon-btn" type="button" aria-label="Preferencias de lectura" title="Preferencias de lectura">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="body-grid">
+    <aside class="sidebar" aria-label="Índice del libro">
+      <div class="sidebar-top">
+        <span class="micro-label">TU BIBLIOTECA</span>
+        <h2>Un lugar para<br><em>aprender sin prisa.</em></h2>
+        <p>Una página a la vez. Volvé cuando quieras.</p>
+      </div>
+      <div class="sidebar-progress">
+        <div class="progress-top">
+          <span>Tu recorrido</span>
+          <strong id="global-progress">0 de 7</strong>
+        </div>
+        <div class="progress-track">
+          <div id="global-bar" class="progress-fill"></div>
+        </div>
+      </div>
+      <nav aria-label="Capítulos">
+        <a class="nav-link" href="#inicio" data-route="inicio">
+          <span class="nav-symbol" aria-hidden="true">⌂</span>
+          <span>Portada e índice</span>
+        </a>
+        <div class="nav-caption">CAPÍTULOS</div>
+        <div id="chapter-nav"></div>
+        <a class="nav-link" href="#recursos" data-route="recursos">
+          <span class="nav-symbol" aria-hidden="true">↧</span>
+          <span>Materiales de práctica</span>
+        </a>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="leaf-icon" aria-hidden="true">❦</span>
+        <p>No necesitás entenderlo todo hoy.<br>La curiosidad también tiene su ritmo.</p>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="-1">
+      <div id="page-content" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <span>Entre páginas · Cuaderno de campo sobre IA y Trabajo Social</span>
+    <span>Tus notas y preferencias permanecen en este navegador, sin cuentas ni servidores.</span>
+  </footer>
+</div>
+
+<dialog id="settings-dialog" class="modal" aria-labelledby="settings-title">
+  <form method="dialog" class="dialog-head">
+    <h2 id="settings-title">Tu espacio de lectura</h2>
+    <button class="icon-btn" aria-label="Cerrar preferencias" type="submit">✕</button>
+  </form>
+  <p>Ajustá la lectura para sentirte más cómoda.</p>
+  <fieldset>
+    <legend>Tamaño del texto</legend>
+    <div class="segmented">
+      <button type="button" data-size="small">Pequeño</button>
+      <button type="button" data-size="regular">Normal</button>
+      <button type="button" data-size="large">Grande</button>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Apariencia</legend>
+    <div class="segmented">
+      <button type="button" data-theme="light">Papel claro</button>
+      <button type="button" data-theme="dark">Lectura nocturna</button>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Respaldo de tu cuaderno</legend>
+    <div class="segmented">
+      <button id="export-all-notes" type="button">Descargar todas mis notas (.txt)</button>
+    </div>
+  </fieldset>
+  <p id="storage-status-note" class="dialog-note">Estas preferencias y notas se guardan solo en este navegador.</p>
+</dialog>
+
+<dialog id="search-dialog" class="modal search-modal" aria-labelledby="search-title">
+  <form method="dialog" class="dialog-head">
+    <h2 id="search-title">Buscar en el libro</h2>
+    <button class="icon-btn" aria-label="Cerrar búsqueda" type="submit">✕</button>
+  </form>
+  <label for="search-input">¿Qué estás buscando?</label>
+  <input id="search-input" type="search" placeholder="Ej. Stata, entrevistas, privacidad…" autocomplete="off" />
+  <p class="search-hint">Buscá por tema, programa (RStudio, Stata, ATLAS.ti), tablas o glosario. Atajo: Ctrl + K.</p>
+  <div id="search-results" class="search-results" aria-live="polite"></div>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

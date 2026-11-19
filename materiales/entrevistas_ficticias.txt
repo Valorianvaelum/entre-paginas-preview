@@ -1,0 +1,55 @@
+DATOS FICTICIOS - NO SON ENTREVISTAS REALES
+
+Entrevista 01
+Tuve que viajar varias veces porque cada vez me pedían un papel diferente. El colectivo me salía caro y no siempre tenía plata para volver.
+
+Entrevista 02
+Me enteré del programa por una vecina. Antes había ido a consultar, pero nadie me explicó bien qué documentación necesitaba.
+
+Entrevista 03
+Cuando finalmente conseguí presentar los papeles, me dijeron que debía esperar. Pasaron varias semanas y no sabía dónde consultar el estado del trámite.
+
+================================================================================
+GUÍA DE PRÁCTICA PARA ATLAS.TI (MATERIAL COMPLEMENTARIO - DATOS FICTICIOS)
+Nota: Si importás este archivo en ATLAS.ti, podés codificar únicamente las tres
+entrevistas superiores o importar el archivo completo como documento de práctica.
+================================================================================
+
+1. PROPUESTA DE CÓDIGOS Y DEFINICIONES OPERATIVAS
+- Costo de transporte: menciones a gastos de traslado o imposibilidad económica
+  de viajar reiteradamente para realizar gestiones. (Ej.: "El colectivo me salía caro")
+- Requisitos cambiantes / viajes repetidos: necesidad de acudir más de una vez por
+  solicitud escalonada de documentación. (Ej.: "cada vez me pedían un papel diferente")
+- Redes personales de información: acceso a noticias o guía sobre el programa a través
+  de vínculos informales (vecinas, familiares, referentes). (Ej.: "Me enteré... por una vecina")
+- Comunicación institucional insuficiente: consultas presenciales o canales oficiales
+  que no aclaran los requisitos necesarios. (Ej.: "nadie me explicó bien")
+- Dificultad de seguimiento: incertidumbre posterior a la entrega sobre plazos y
+  estado de avance del trámite. (Ej.: "no sabía dónde consultar el estado del trámite")
+
+2. AGRUPACIÓN EN CATEGORÍAS TENTATIVAS (SIN BORRAR DIFERENCIAS)
+- Categoría A — Barreras económicas y territoriales de traslado
+  (agrupa: Costo de transporte; Requisitos cambiantes / viajes repetidos).
+- Categoría B — Barreras informativas y circuitos de orientación
+  (agrupa: Redes personales de información; Comunicación institucional insuficiente).
+- Categoría C — Opacidad y demora en la gestión administrativa
+  (agrupa: Dificultad de seguimiento).
+Nota metodológica: con tres testimonios ficticios NO hay saturación teórica.
+
+3. PLANTILLA DE MEMO ANALÍTICO SUGERIDA
+- Título del memo: Decisiones iniciales de codificación (ejercicio ficticio)
+- Qué observo en los tres relatos: mientras la Entrevista 01 enfatiza el costo material
+  de los traslados repetidos, las Entrevistas 02 y 03 muestran vacíos de información antes
+  y después de presentar la documentación.
+- Dudas o hipótesis a contrastar en campo real: ¿la falta de información inicial explica
+  parte de los viajes repetidos? ¿Existen canales digitales inaccesibles o inexistentes?
+
+4. COMPARACIÓN: ATLAS.TI vs. ASISTENCIA EXTERNA CON CHATGPT
+- Codificación manual en ATLAS.ti: mantenés el archivo en tu proyecto local, decidís
+  las citas exactas, definís el libro de códigos y conservás trazabilidad completa.
+- Asistencia externa con ChatGPT: útil para ensayar nombres de códigos, buscar
+  interpretaciones alternativas o redactar memos preliminares usando textos FICTICIOS
+  o debidamente anonimizados y autorizados. No reemplaza la lectura completa del corpus.
+- Funciones de IA integradas en ATLAS.ti: su disponibilidad, costos y envío de datos a
+  servidores dependen de la edición, versión y términos vigentes; verificalos antes de
+  utilizar material real con personas identificables.
